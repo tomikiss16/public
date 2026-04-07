@@ -1,0 +1,491 @@
+:root {
+  --darker-color: #838b4f;
+  --beige-color: #f7f2ec;
+  --pink-color: #f3e1e1;
+}
+
+body {
+  margin: 0;
+  /*font-family: lato, sans-serif;*/
+ /* display: flex;*/
+  min-height: 100vh;
+  /*background-image: url("pics/lb.jpg");*/
+  background-color: var(--pink-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.section:nth-child(1) { background: var(--beige-color); }
+.section:nth-child(2) { background: var(--darker-color); }
+.section:nth-child(3) { background: var(--pink-color); }
+.section:nth-child(4) { background: var(--darker-color); }
+.section:nth-child(5) { background: var(--beige-color); }
+.section:nth-child(6) { background: var(--darker-color); }
+
+/*main*/
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LEFT */
+.hero-image {
+  width: 40%;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+/* RIGHT (grouped text) */
+.text-group {
+  width: 40%;
+  display: flex;
+  flex-direction: column; /* THIS stacks them */
+  gap: 10px;
+}
+/*main*/
+
+
+/*countdown*/
+#countdown-section {
+  color: var(--beige-color);
+  text-align: center;
+  height: 60vh;
+}
+
+.countdown h1 {
+  margin-bottom: 20px;
+}
+
+#timer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+#timer span {
+  display: block;
+}
+
+#timer b {
+  font-size: 3rem;
+}
+/*countdown*/
+
+/*music*/
+#music {
+  background: var(--darker-color);
+  color: var(--beige-color);
+  height: 100vh;
+}
+
+.music-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LEFT SIDE */
+.music-player {
+  width: 300px;
+  text-align: center;
+}
+
+.album-cover {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+
+.player-ui {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  padding: 20px;
+  border-radius: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+
+/* Scrolling container */
+.scrolling-title {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  padding: 2px 0; /* very small vertical padding */
+  margin-bottom: 0px; /* small space before progress bar */
+}
+
+/* Playlist text */
+.playlist-title {
+  display: inline-block;
+  font-size: 1rem;          /* smaller font */
+  line-height: 0.1;             /* tighter line height */
+  animation: scroll-back-forth 8s linear infinite alternate; 
+}
+
+/* Keyframes for smooth left-right scroll */
+@keyframes scroll-back-forth {
+  0% {
+    transform: translateX(20%);      /* start at normal position */
+  }
+  100% {
+    transform: translateX(-20%);   /* move slightly left, not fully off-screen */
+  }
+}
+
+/* Controls */
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+/* Progress bar */
+.progress-bar {
+  height: 5px;
+  background: #333;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 40%; /* fake progress */
+  height: 100%;
+  background: white;
+
+}
+
+/* RIGHT SIDE */
+.music-text {
+  max-width: 400px;
+}
+
+.music-text h1 {
+  margin-bottom: 15px;
+}
+
+.spotify-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: var(--pink-color);
+  color: var(--darker-color);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+/*music*/
+
+/*Program*/
+
+.program-table {
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--beige-color);
+  padding:5%;
+  border-radius: 15px;
+  border: 5px solid var(--darker-color);
+}
+
+.program-item {
+  display: flex;
+  gap: 30px;              
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.time {
+  min-width: 80px;       
+}
+
+.event {
+  flex: 1;
+}
+
+.program-title {
+  text-align: center;
+  margin:0px;
+
+}
+/*Program*/
+
+/*allergie*/
+#allergie {
+  text-align: center;
+  padding: 60px 20px;
+  height: 60vh;
+}
+
+.allergie-container {
+  max-width: 500px;
+  margin: auto;
+}
+.allergie-text {
+  color:black;  
+}
+.allergie-title {
+  color:var(--darker-color);  
+}
+.allergie-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: var(--darker-color);
+  color: var(--pink-color);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+/*allergie*/
+
+
+
+/* Phones */
+@media (max-width: 600px) {
+  
+  #countdown-section {
+  color: var(--beige-color);
+  text-align: center;
+  height: 35vh;
+}
+
+  #timer b {
+    font-size: 1.5rem;
+  }
+
+  .countdown h1 {
+    font-size: 1.8rem;
+  }
+
+/*main*/
+#hero{
+  height: 80vh;
+}
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-image img {
+    width: 60%;
+  }
+  /* Make elements full width */
+  .hero-image,
+  .text-group {
+    width: 80%;
+  }
+
+  /* Split the text-group behavior */
+  .text-group {
+    display: contents; 
+    /* this "unwraps" it so children can be reordered */
+  }
+
+  /* Order elements */
+  .main-title {
+    order: 1;
+    font-size: 1.2rem;
+  }
+
+  .hero-image {
+    order: 2;
+  }
+
+  .sub-text {
+    order: 3;
+    font-size: 0.9rem;
+  }
+/*main*/
+
+/*music*/
+
+  #music {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    height: 85vh;      
+    padding: 20px;
+  }
+
+  .music-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* spacing between album and button */
+  }
+
+  /* Hide the right text section */
+  .music-title {
+    display: none;
+  }
+
+  /* Make music-player fit mobile nicely */
+  .music-player {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Keep player UI aligned */
+  .player-ui {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust album size */
+  .album-cover {
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Center buttons inside player UI */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Center playlist title */
+  .playlist-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  /* Add Your Songs button below the player, centered */
+  #music .spotify-btn {
+    display: inline-block;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+/*music*/
+
+/*program*/
+#program{
+   height: 55vh;  
+}
+.program-table{
+  display: block;
+  width: 50%;
+}
+.time{
+  font-size: 0.7em;
+}
+.event{
+  font-size: 0.7em;
+  
+}
+   
+/*program*/
+
+/*allergie*/
+#allergie {
+  height: 60vh;
+}
+
+.allergie-btn {
+  width: 60%;
+  text-align: center;
+}
+.allergie-text {
+margin-left: 10%;
+margin-right: 10%;
+}
+
+/*allergie*/
+}
+/* Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #191919;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  /*
+  .content {
+    width: 80%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+*/
+  .logo {
+    width: 80%;
+  }
+
+  .overlay.show {
+    display: block;
+  }
+
+  .contact-info {
+    padding: 15px; /* Slightly smaller padding */
+    max-width: 90%; /* More flexible width for better use of space */
+  }
+
+  .label,
+  .value {
+    display: block; /* Stack label and value for clearer presentation */
+    width: auto; /* Full width for better alignment */
+    margin: 5px 0; /* Tighter spacing */
+  }
+
+  .label {
+    margin-bottom: 0; /* Remove bottom margin from label for closer association with value */
+  }
+}
