@@ -46,7 +46,7 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
+  width: 70%;
 }
 
 /* RIGHT (grouped text) */
@@ -55,6 +55,9 @@ body {
   display: flex;
   flex-direction: column; /* THIS stacks them */
   gap: 10px;
+}
+.sub-text{
+  font-size: 1.5rem;
 }
 /*main*/
 
@@ -110,10 +113,11 @@ body {
 
 .album-cover {
   width: 100%;
+  aspect-ratio: 1 / 1;   /* makes it a square */
+  object-fit: cover;     /* crops nicely */
   border-radius: 20px;
   margin-bottom: 20px;
 }
-
 
 .player-ui {
   background: rgba(0, 0, 0, 0.4);
@@ -196,7 +200,7 @@ body {
   margin-bottom: 15px;
 }
 
-.spotify-btn {
+.spotify-btn-1 {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 20px;
@@ -205,6 +209,10 @@ body {
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
+}
+.spotify-btn-2 {
+  display: none;
+
 }
 /*music*/
 
@@ -270,7 +278,29 @@ body {
 }
 /*allergie*/
 
+/*stay*/
+#stay {
+  text-align: center;
+  padding: 60px 20px;
+  height: 60vh;
+}
+.stay-title {
+  color:var(--beige-color);  
+}
+.stay-text {
+  color:black;  
+}
+.stay-text-link {
+  color:black;  
+  display: inline-block;             
+  transition: transform 0.2s ease;   
 
+}
+
+.stay-text-link:hover {
+  transform: scale(1.1);          
+}
+/*stay*/
 
 /* Phones */
 @media (max-width: 600px) {
@@ -291,7 +321,7 @@ body {
 
 /*main*/
 #hero{
-  height: 80vh;
+  height: 100vh;
 }
   .hero-wrapper {
     flex-direction: column;
@@ -389,17 +419,26 @@ body {
   }
 
   /* Add Your Songs button below the player, centered */
-  #music .spotify-btn {
-    display: inline-block;
-    margin-top: 20px;
-    width: 80%;
-    text-align: center;
+  #music .spotify-btn-1 {
+    display: none
+
+  }
+  #music .spotify-btn-2 {
+display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: var(--pink-color);
+  color: var(--darker-color);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+
   }
 /*music*/
 
 /*program*/
 #program{
-   height: 55vh;  
+   height: 60vh;  
 }
 .program-table{
   display: block;
@@ -407,17 +446,18 @@ body {
 }
 .time{
   font-size: 0.7em;
+  margin-right: -40px;
 }
 .event{
   font-size: 0.7em;
   
 }
-   
+
 /*program*/
 
 /*allergie*/
 #allergie {
-  height: 60vh;
+  height: 70vh;
 }
 
 .allergie-btn {
