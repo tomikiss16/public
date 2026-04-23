@@ -522,6 +522,7 @@ margin-left: 20%;
   /* Add Your Songs button below the player, centered */
   #music .spotify-btn-1 {
     display: none;
+    font-family: "HarmondItalic", sans-serif; 
     
   }
   #music .spotify-btn-2 {
