@@ -5,31 +5,31 @@
 }
 @font-face {
   font-family: 'HarmondItalic';
-  src: url('bence/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  src: url('assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: 'HarmondRegular';
-  src: url('bence/assets/fonts/Harmond-ExtBdItaExp.otf') format('opentype');
+  src: url('assets/fonts/Harmond-ExtBdItaExp.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'HarmondRegularS';
-  src: url('bence/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  src: url('assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'HarmondRegularB';
-  src: url('bence/assets/fonts/Harmond-ExtraBoldExpanded.otf') format('opentype');
+  src: url('assets/fonts/Harmond-ExtraBoldExpanded.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'MontrealRegular';
-  src: url('bence/assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+  src: url('assets/fonts/NeueMontreal-Regular.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
@@ -266,7 +266,7 @@ font-family: "HarmondItalic", sans-serif;
 
 /*Program*/
 #program{
-    background-image: url("bence/pics/back3mod.jpg");
+    background-image: url("pics/back3mod.jpg");
   background-size: cover;
   background-position: center;
 }
