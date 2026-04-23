@@ -3,7 +3,36 @@
   --beige-color: #f7f2ec;
   --pink-color: #f3e1e1;
 }
-
+@font-face {
+  font-family: 'HarmondItalic';
+  src: url('/assets/fonts/Harmond-SemiBoldCondensed.otf ') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'HarmondRegular';
+  src: url('/assets/fonts/Harmond-ExtBdItaExp.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HarmondRegularS';
+  src: url('/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HarmondRegularB';
+  src: url('/assets/fonts/Harmond-ExtraBoldExpanded.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontrealRegular';
+  src: url('/assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
 body {
   margin: 0;
   /*font-family: lato, sans-serif;*/
@@ -54,10 +83,21 @@ body {
   width: 40%;
   display: flex;
   flex-direction: column; /* THIS stacks them */
-  gap: 10px;
+  margin-left: -10%;
+ margin-top: -9%;
+  
+}
+.main-title
+{
+text-align: right;
+font-family: 'HarmondItalic', sans-serif;
+  font-style: italic; 
+  font-size: 2.8rem;
 }
 .sub-text{
-  font-size: 1.5rem;
+  font-size: 1rem;
+  
+  font-family: "Geist Mono", monospace;
 }
 /*main*/
 
@@ -66,11 +106,13 @@ body {
 #countdown-section {
   color: var(--beige-color);
   text-align: center;
-  height: 60vh;
+  height: 50vh;
+
 }
 
 .countdown h1 {
   margin-bottom: 20px;
+  font-family: 'HarmondRegularS', sans-serif;
 }
 
 #timer {
@@ -78,6 +120,9 @@ body {
   gap: 30px;
   justify-content: center;
   font-size: 1.5rem;
+  font-family: "Geist Mono", monospace;
+  padding-bottom: 10%;
+
 }
 
 #timer span {
@@ -86,6 +131,7 @@ body {
 
 #timer b {
   font-size: 3rem;
+   font-family: "Geist Mono", monospace;
 }
 /*countdown*/
 
@@ -93,7 +139,7 @@ body {
 #music {
   background: var(--darker-color);
   color: var(--beige-color);
-  height: 100vh;
+  height: 90vh;
 }
 
 .music-wrapper {
@@ -109,14 +155,16 @@ body {
 .music-player {
   width: 300px;
   text-align: center;
+  
 }
 
 .album-cover {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* makes it a square */
+ /* aspect-ratio: 1 / 1;    makes it a square */
   object-fit: cover;     /* crops nicely */
-  border-radius: 20px;
-  margin-bottom: 20px;
+  /*border-radius: 20px;*/
+  
+  
 }
 
 .player-ui {
@@ -125,8 +173,8 @@ body {
   -webkit-backdrop-filter: blur(10px);
 
   padding: 20px;
-  border-radius: 15px;
-
+  /*border-radius: 15px;*/
+  display: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 10px;
 }
@@ -194,21 +242,29 @@ body {
 /* RIGHT SIDE */
 .music-text {
   max-width: 400px;
+  margin-bottom: 5%;
+ 
 }
 
 .music-text h1 {
   margin-bottom: 15px;
+  font-family: 'HarmondRegularS', sans-serif;
+}
+.music-text p {
+  font-family: "Geist Mono", monospace;
+  font-size: 1.2rem;
 }
 
 .spotify-btn-1 {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 20px;
-  background: var(--pink-color);
+  background: var(--beige-color);
   color: var(--darker-color);
   text-decoration: none;
-  border-radius: 25px;
   font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'HarmondRegularB', sans-serif;
 }
 .spotify-btn-2 {
   display: none;
@@ -217,14 +273,22 @@ body {
 /*music*/
 
 /*Program*/
-
+#program{
+    background-image: url("pics/back3mod.jpg");
+  background-size: cover;
+  background-position: center;
+}
 .program-table {
   max-width: 600px;
-  margin: auto;
+  margin: auto;  
   background-color: var(--beige-color);
   padding:5%;
-  border-radius: 15px;
   border: 5px solid var(--darker-color);
+  /*font-family: "MontrealRegular", monospace;*/
+ font-size: 1.2rem;
+ margin-left: 55%;
+ font-family: "Geist Mono", monospace;
+  
 }
 
 .program-item {
@@ -245,6 +309,7 @@ body {
 .program-title {
   text-align: center;
   margin:0px;
+ 
 
 }
 /*Program*/
@@ -262,9 +327,13 @@ body {
 }
 .allergie-text {
   color:black;  
+  font-family: "Geist Mono", monospace;
+  font-size: 1.2rem;
 }
 .allergie-title {
   color:var(--darker-color);  
+  font-family: "HarmondItalic", sans-serif;
+ 
 }
 .allergie-btn {
   display: inline-block;
@@ -273,7 +342,7 @@ body {
   background: var(--darker-color);
   color: var(--pink-color);
   text-decoration: none;
-  border-radius: 25px;
+  font-family: "HarmondItalic", sans-serif;
   font-weight: bold;
 }
 /*allergie*/
@@ -282,19 +351,42 @@ body {
 #stay {
   text-align: center;
   padding: 60px 20px;
-  height: 60vh;
+  height: 65vh;
+
+}
+.stay-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+.stay-image img {
+  width: 100%;
+  max-width: 400px;
+margin-left: 20%;
+}
+
+.stay-content {
+  flex: 1;
 }
 .stay-title {
   color:var(--beige-color);  
+  font-family: "HarmondItalic", sans-serif;
 }
 .stay-text {
-  color:black;  
+  color:var(--beige-color);  
+  font-family: "Geist Mono", monospace;
+  font-size: 1rem;
+  width: 70%;
+  margin-left: 15%;
 }
 .stay-text-link {
-  color:black;  
+ color:var(--beige-color); 
   display: inline-block;             
   transition: transform 0.2s ease;   
-
+  font-family: "Geist Mono", monospace;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .stay-text-link:hover {
@@ -351,11 +443,13 @@ body {
 
   .hero-image {
     order: 2;
+    margin-top: -15%;
   }
 
   .sub-text {
     order: 3;
     font-size: 0.9rem;
+    width: 80%;
   }
 /*main*/
 
@@ -365,7 +459,7 @@ body {
     display: flex;
     justify-content: center; /* horizontal center */
     align-items: center;     /* vertical center */
-    height: 85vh;      
+    height: 100vh;      
     padding: 20px;
   }
 
@@ -377,6 +471,10 @@ body {
 
   /* Hide the right text section */
   .music-title {
+    margin-top: -5%;
+  }
+
+  .music-title2 {
     display: none;
   }
 
@@ -399,8 +497,9 @@ body {
   /* Adjust album size */
   .album-cover {
     width: 80%;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     margin-bottom: 20px;
+    margin-top: -10%;
   }
 
   /* Center buttons inside player UI */
@@ -424,13 +523,13 @@ body {
 
   }
   #music .spotify-btn-2 {
-display: inline-block;
-  margin-top: 20px;
+  display: inline-block;
+  
   padding: 12px 20px;
-  background: var(--pink-color);
+  background: var(--beige-color);
   color: var(--darker-color);
   text-decoration: none;
-  border-radius: 25px;
+  
   font-weight: bold;
 
   }
@@ -442,7 +541,8 @@ display: inline-block;
 }
 .program-table{
   display: block;
-  width: 50%;
+  width: 55%;
+  margin-left: 16%;
 }
 .time{
   font-size: 0.7em;
@@ -470,6 +570,49 @@ margin-right: 10%;
 }
 
 /*allergie*/
+
+/*stay*/
+#stay {
+  height: 80vh;
+}
+.stay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+    text-align: center;
+
+  }
+
+  .stay-image img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin-left: -5%;
+    margin-top: -25%;
+  }
+
+  .stay-content {
+    margin-top: -35%;
+    width: 100%;
+  }
+
+  .stay-title {
+    font-size: 1.8rem;
+  }
+
+  .stay-text-link {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .stay-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  /*stay*/
 }
 /* Tablets */
 @media (min-width: 600px) and (max-width: 1024px) {
