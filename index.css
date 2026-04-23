@@ -3,7 +3,6 @@
   --beige-color: #f7f2ec;
   --pink-color: #f3e1e1;
 }
-
 @font-face {
   font-family: 'HarmondItalic';
   src: url('assets/fonts/Harmond-SemiBoldCondensed.otf') format('woff2');
@@ -531,7 +530,7 @@ margin-left: 20%;
   color: var(--darker-color);
   text-decoration: none;
   font-family: "HarmondItalic", sans-serif; 
-  font-weight: bold;
+  
 
   }
 /*music*/
@@ -615,62 +614,4 @@ margin-right: 10%;
   }
 
   /*stay*/
-}
-/* Tablets */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #191919;
-    position: absolute;
-    top: 60px; /* Adjust based on your navbar height */
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-left {
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-  /*
-  .content {
-    width: 80%;
-    padding-top: 60px;
-    padding-bottom: 20px;
-  }
-*/
-  .logo {
-    width: 80%;
-  }
-
-  .overlay.show {
-    display: block;
-  }
-
-  .contact-info {
-    padding: 15px; /* Slightly smaller padding */
-    max-width: 90%; /* More flexible width for better use of space */
-  }
-
-  .label,
-  .value {
-    display: block; /* Stack label and value for clearer presentation */
-    width: auto; /* Full width for better alignment */
-    margin: 5px 0; /* Tighter spacing */
-  }
-
-  .label {
-    margin-bottom: 0; /* Remove bottom margin from label for closer association with value */
-  }
 }
