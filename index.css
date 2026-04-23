@@ -168,20 +168,8 @@ font-family: 'HarmondItalic', sans-serif;
 }
 
 .player-ui {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  padding: 20px;
-  /*border-radius: 15px;*/
-  display: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 10px;
+display: none;
 }
-.player-ui2{
-  display: none;
-}
-
 
 /* Scrolling container */
 .scrolling-title {
@@ -491,24 +479,23 @@ margin-left: 20%;
   }
 
   /* Keep player UI aligned */
-  .player-ui2 {
+  .player-ui {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
 
-      padding: 20px;
-      /*border-radius: 15px;*/
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      margin-top: 10px;
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+
+  padding: 20px;
+  /*border-radius: 15px;*/
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
   }
-  .player-ui {
-  display: none;
-  }
+
   /* Adjust album size */
   .album-cover {
     width: 80%;
