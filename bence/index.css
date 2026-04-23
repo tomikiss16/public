@@ -1,0 +1,626 @@
+:root {
+  --darker-color: #838b4f;
+  --beige-color: #f7f2ec;
+  --pink-color: #f3e1e1;
+}
+@font-face {
+  font-family: 'HarmondItalic';
+  src: url('bence/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'HarmondRegular';
+  src: url('bence/assets/fonts/Harmond-ExtBdItaExp.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HarmondRegularS';
+  src: url('bence/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HarmondRegularB';
+  src: url('bence/assets/fonts/Harmond-ExtraBoldExpanded.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontrealRegular';
+  src: url('bence/assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  /*font-family: lato, sans-serif;*/
+ /* display: flex;*/
+  min-height: 100vh;
+  /*background-image: url("pics/lb.jpg");*/
+  background-color: var(--pink-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.section:nth-child(1) { background: var(--beige-color); }
+.section:nth-child(2) { background: var(--darker-color); }
+.section:nth-child(3) { background: var(--pink-color); }
+.section:nth-child(4) { background: var(--darker-color); }
+.section:nth-child(5) { background: var(--beige-color); }
+.section:nth-child(6) { background: var(--darker-color); }
+
+/*main*/
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LEFT */
+.hero-image {
+  width: 40%;
+}
+
+.hero-image img {
+  width: 70%;
+}
+
+/* RIGHT (grouped text) */
+.text-group {
+  width: 40%;
+  display: flex;
+  flex-direction: column; /* THIS stacks them */
+  margin-left: -10%;
+ margin-top: -9%;
+  
+}
+.main-title
+{
+text-align: right;
+font-family: 'HarmondItalic', sans-serif;
+  font-style: italic; 
+  font-size: 2.8rem;
+}
+.sub-text{
+  font-size: 1rem;
+  
+  font-family: "Geist Mono", monospace;
+}
+/*main*/
+
+
+/*countdown*/
+#countdown-section {
+  color: var(--beige-color);
+  text-align: center;
+  height: 50vh;
+
+}
+
+.countdown h1 {
+  margin-bottom: 20px;
+  font-family: 'HarmondRegularS', sans-serif;
+}
+
+#timer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Geist Mono", monospace;
+  padding-bottom: 10%;
+
+}
+
+#timer span {
+  display: block;
+}
+
+#timer b {
+  font-size: 3rem;
+   font-family: "Geist Mono", monospace;
+}
+/*countdown*/
+
+/*music*/
+#music {
+  background: var(--darker-color);
+  color: var(--beige-color);
+  height: 90vh;
+}
+
+.music-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LEFT SIDE */
+.music-player {
+  width: 300px;
+  text-align: center;
+  
+}
+
+.album-cover {
+  width: 100%;
+ /* aspect-ratio: 1 / 1;    makes it a square */
+  object-fit: cover;     /* crops nicely */
+  /*border-radius: 20px;*/
+  
+  
+}
+
+.player-ui {
+display: none;
+}
+
+/* Scrolling container */
+.scrolling-title {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  padding: 2px 0; /* very small vertical padding */
+  margin-bottom: 0px; /* small space before progress bar */
+}
+
+/* Playlist text */
+.playlist-title {
+  display: inline-block;
+  font-size: 1rem;          /* smaller font */
+  line-height: 0.1;             /* tighter line height */
+  animation: scroll-back-forth 8s linear infinite alternate; 
+}
+
+/* Keyframes for smooth left-right scroll */
+@keyframes scroll-back-forth {
+  0% {
+    transform: translateX(20%);      /* start at normal position */
+  }
+  100% {
+    transform: translateX(-20%);   /* move slightly left, not fully off-screen */
+  }
+}
+
+/* Controls */
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+/* Progress bar */
+.progress-bar {
+  height: 5px;
+  background: #333;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 40%; /* fake progress */
+  height: 100%;
+  background: white;
+
+}
+
+/* RIGHT SIDE */
+.music-text {
+  max-width: 400px;
+  margin-bottom: 5%;
+ 
+}
+
+.music-text h1 {
+  margin-bottom: 15px;
+  font-family: 'HarmondRegularS', sans-serif;
+}
+.music-text p {
+  font-family: "Geist Mono", monospace;
+  font-size: 1.2rem;
+}
+
+.spotify-btn-1 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: var(--beige-color);
+  color: var(--darker-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: "HarmondItalic", sans-serif; 
+}
+.spotify-btn-2 {
+  display: none;
+font-family: "HarmondItalic", sans-serif;
+}
+/*music*/
+
+/*Program*/
+#program{
+    background-image: url("bence/pics/back3mod.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.program-table {
+  max-width: 600px;
+  margin: auto;  
+  background-color: var(--beige-color);
+  padding:5%;
+  border: 5px solid var(--darker-color);
+  /*font-family: "MontrealRegular", monospace;*/
+ font-size: 1.2rem;
+ margin-left: 55%;
+ font-family: "Geist Mono", monospace;
+  
+}
+
+.program-item {
+  display: flex;
+  gap: 30px;              
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.time {
+  min-width: 80px;       
+}
+
+.event {
+  flex: 1;
+}
+
+.program-title {
+  text-align: center;
+  margin:0px;
+ 
+
+}
+/*Program*/
+
+/*allergie*/
+#allergie {
+  text-align: center;
+  padding: 60px 20px;
+  height: 60vh;
+}
+
+.allergie-container {
+  max-width: 500px;
+  margin: auto;
+}
+.allergie-text {
+  color:black;  
+  font-family: "Geist Mono", monospace;
+  font-size: 1.2rem;
+}
+.allergie-title {
+  color:var(--darker-color);  
+  font-family: "HarmondItalic", sans-serif;
+ 
+}
+.allergie-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: var(--darker-color);
+  color: var(--pink-color);
+  text-decoration: none;
+  font-family: "HarmondItalic", sans-serif;
+  font-weight: bold;
+}
+/*allergie*/
+
+/*stay*/
+#stay {
+  text-align: center;
+  padding: 60px 20px;
+  height: 65vh;
+
+}
+.stay-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+.stay-image img {
+  width: 100%;
+  max-width: 400px;
+margin-left: 20%;
+}
+
+.stay-content {
+  flex: 1;
+}
+.stay-title {
+  color:var(--beige-color);  
+  font-family: "HarmondItalic", sans-serif;
+}
+.stay-text {
+  color:var(--beige-color);  
+  font-family: "Geist Mono", monospace;
+  font-size: 1rem;
+  width: 70%;
+  margin-left: 15%;
+}
+.stay-text-link {
+ color:var(--beige-color); 
+  display: inline-block;             
+  transition: transform 0.2s ease;   
+  font-family: "Geist Mono", monospace;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.stay-text-link:hover {
+  transform: scale(1.1);          
+}
+/*stay*/
+
+/* Phones */
+@media (max-width: 600px) {
+  
+  #countdown-section {
+  color: var(--beige-color);
+  text-align: center;
+  height: 35vh;
+  }
+
+    #timer b {
+      font-size: 1.5rem;
+    }
+
+    .countdown h1 {
+      font-size: 1.8rem;
+    }
+
+  /*main*/
+    #hero{
+      height: 100vh;
+    }
+    .hero-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-image img {
+      width: 60%;
+    }
+    /* Make elements full width */
+    .hero-image,
+    .text-group {
+      width: 80%;
+    }
+
+    /* Split the text-group behavior */
+    .text-group {
+        display: contents;
+
+      /* this "unwraps" it so children can be reordered */
+    }
+      /* this "unwraps" it so children can be reordered */
+  
+
+  /* Order elements */
+  .main-title {
+    order: 1;
+    font-size: 1.2rem;
+  }
+
+  .hero-image {
+    order: 2;
+    margin-top: -15%;
+  }
+
+  .sub-text {
+    order: 3;
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  /*main*/
+
+  /*music*/
+
+  #music {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    height: 100vh;      
+    padding: 20px;
+  }
+
+  .music-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* spacing between album and button */
+  }
+
+  /* Hide the right text section */
+  .music-title {
+    margin-top: -5%;
+  }
+
+  .music-title2 {
+    display: none;
+  }
+
+  /* Make music-player fit mobile nicely */
+  .music-player {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Keep player UI aligned */
+  .player-ui {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+
+  padding: 20px;
+  /*border-radius: 15px;*/
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  }
+
+  /* Adjust album size */
+  .album-cover {
+    width: 80%;
+    /*border-radius: 15px;*/
+    margin-bottom: 20px;
+    margin-top: -10%;
+  }
+
+  /* Center buttons inside player UI */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Center playlist title */
+  .playlist-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  /* Add Your Songs button below the player, centered */
+  #music .spotify-btn-1 {
+    display: none;
+    font-family: "HarmondItalic", sans-serif; 
+    
+  }
+  #music .spotify-btn-2 {
+  display: inline-block;
+  
+  padding: 12px 20px;
+  background: var(--beige-color);
+  color: var(--darker-color);
+  text-decoration: none;
+  font-family: "HarmondItalic", sans-serif; 
+  }
+  /*music*/
+
+  /*program*/
+  #program{
+    height: 60vh;  
+  }
+  .program-table{
+    display: block;
+    width: 55%;
+    margin-left: 16%;
+  }
+  .time{
+    font-size: 0.7em;
+    margin-right: -40px;
+  }
+  .event{
+    font-size: 0.7em;
+    
+  }
+
+  /*program*/
+
+  /*allergie*/
+  #allergie {
+    height: 70vh;
+  }
+
+  .allergie-btn {
+    width: 30%;
+    text-align: center;
+  }
+  .allergie-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+  /*allergie*/
+
+  /*stay*/
+  #stay {
+    height: 80vh;
+  }
+  .stay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+    text-align: center;
+
+  }
+
+  .stay-image img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin-left: -5%;
+    margin-top: -25%;
+  }
+
+  .stay-content {
+    margin-top: -35%;
+    width: 100%;
+  }
+
+  .stay-title {
+    font-size: 1.8rem;
+  }
+
+  .stay-text-link {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .stay-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .spotify-btn-2 {
+    font-family: "HarmondItalic", sans-serif !important;
+    border: 3px solid red !important; /* csak hogy lássuk hat-e a CSS */
+  }
+
+  /*stay*/
+}
