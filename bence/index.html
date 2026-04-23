@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bence/index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital@1&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mea+Culpa&family=Parisienne&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <title>Juli&Tamas</title>
+
+    <link rel="icon" type="image/jpg" href="bence/pics/rings.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <div class="overlay"></div>
+
+    <div>
+      <section class="section" id="hero">
+        <div class="hero-wrapper">
+
+          <!-- LEFT -->
+          <div class="hero-image">
+            <img src="bence/pics/main.jpg" alt="Julcsi & Tamás">
+          </div>
+
+          <!-- RIGHT -->
+          <div class="text-group">
+            <div class="main-title">
+              <h1>Julcsi & Tamás</h1>
+            </div>
+            <div class="sub-text">   
+                          
+              Nagy szeretettel várunk benneteket, hogy velünk együtt ünnepeljétek életünk legszebb pillanatát, amikor örökre összekötjük az életünket.  
+              <br><br>
+              Legyetek részesei ennek a különleges napnak.
+            </div>
+          </div>  
+
+        </div>
+      </section>
+
+      <!--countdown section-->
+      <section class="section" id="countdown-section">
+        <div class="countdown">
+          <h1>Már csak ennyi van hátra</h1>
+          <div id="timer">
+            <span><b id="days">0</b><br>nap</span>
+            <span><b id="hours">0</b><br>óra</span>
+            <span><b id="minutes">0</b><br>perc</span>
+            <span><b id="seconds">0</b><br>mp</span>
+          </div>
+        </div>
+      </section>
+
+      <!--program section-->
+      <section class="section" id="program">
+        <div class="program-table">
+          <!-- <h2 class="program-title">Program</h2> --> 
+          <div class="program-item">
+            <span class="time">16:00</span>
+            <span class="event">Templomi esküvő</span>
+          </div>
+          <div class="program-item">
+            <span class="time">17:30</span>
+            <span class="event">Polgári esküvő</span>
+          </div>
+          <div class="program-item">
+            <span class="time">20:00</span>
+            <span class="event">Vacsora</span>
+          </div>
+          <div class="program-item">
+            <span class="time">23:00</span>
+            <span class="event">Esküvői torta</span>
+          </div>
+          <div class="program-item">
+            <span class="time">00:00</span>
+            <span class="event">Menyasszony tánc</span>
+          </div>
+        </div>
+      </section>
+
+      <!--music section-->
+      <section class="section" id="music">
+        <div class="music-wrapper">
+
+          <!-- LEFT: Text -->
+          <div class="music-text">
+            <h1 class="music-title">Playlist</h1>
+            <p class="music-title2">Add hozzá a kedvenc dalaidat a lejátszási listához!</p>
+            <!-- CTA BUTTON (separate!) -->
+            <a href="https://open.spotify.com/playlist/5ndSuPMANXWaAnrUsQo0gb?si=Z48S9CG6RLGVIIidYji_fA&pi=h7qT0gW5R4yvC&pt=13b9a5123aa0e6f37df46fef38b28832"
+            target="_blank"
+            class="spotify-btn-1">
+            hozzáadás
+          </a>
+          </div>
+
+          <!-- RIGHT: Player -->
+          <div class="music-player">
+            <img src="bence/pics/cover.jpg" alt="Album Cover" class="album-cover">
+            <div class="player-ui">
+              <div class="controls">
+                <div class="scrolling-title">
+                  <p class="playlist-title">Wedding Playlist - Julcsi & Tamás</p>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="buttons">
+                  <button>⏮</button>
+                  <button>▶</button>
+                  <button>⏭</button>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+
+          <!-- CTA BUTTON (separate!) -->
+          <a href="https://open.spotify.com/playlist/5ndSuPMANXWaAnrUsQo0gb?si=Ik8djCsuQVCm7UH7Js1pWw&pt=4289a5dbbd8182f7f2c89669ce15c119&pi=-OglUherT3q5X"
+            target="_blank"
+            class="spotify-btn-2">
+            hozzáadás
+          </a>
+
+        </div>
+      </section>
+
+      <!--allergie section-->
+      <section class="section" id="allergie">
+        <div class="allergie-container">
+          <h2 class="allergie-title">Allergiák és étkezési igények</h2>
+          <p class="allergie-text">Kérjük, jelezzétek, ha bármilyen allergiátok vagy speciális étkezési igényetek van.</p>
+          <a href="https://docs.google.com/spreadsheets/d/1Emf0c3K_6eHFTMsD12V3h6tfbRry3xMC6FcxqD7Zq2M/edit?usp=sharing" target="_blank" class="allergie-btn">
+            jelezd itt
+          </a>
+        </div>
+      </section>
+
+      <!--stay section-->
+      <section class="section" id="stay">
+        <div class="stay-container">
+
+          <div class="stay-image">
+            <img src="bence/pics/vad2-removed.png" alt="Szállás helyszín">
+          </div>
+
+          <div class="stay-content">
+            <h2 class="stay-title">Helyszín és szállás</h2>
+            <a class="stay-text-link" href="https://vadkertmajor.hu/">
+              Sárvár, Vadkert krt. 2, 9600
+            </a>
+            <p class="stay-text">A korábban egyeztetett szállásfoglalással érkező vendégeink a bejelentkezést követően 14:00 órától foglalhatják el szobáikat.</p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "firebase/app";
+      import { getAnalytics } from "firebase/analytics";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBLs7ejSl2Y2MsvcVl9zVq9wh92c5jdnqs",
+        authDomain: "juli-73783.firebaseapp.com",
+        projectId: "juli-73783",
+        storageBucket: "juli-73783.firebasestorage.app",
+        messagingSenderId: "478550394670",
+        appId: "1:478550394670:web:dc042374df14d4aa299cbf",
+        measurementId: "G-VMQ8PGYD1G",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
