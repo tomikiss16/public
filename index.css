@@ -423,11 +423,8 @@ margin-left: 20%;
 
   /* Split the text-group behavior */
   .text-group {
-    width: 80%;
-    margin-left: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+      display: contents;
+
     /* this "unwraps" it so children can be reordered */
   }
     /* this "unwraps" it so children can be reordered */
