@@ -264,7 +264,7 @@ font-family: 'HarmondItalic', sans-serif;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
-  font-family: 'HarmondRegularB', sans-serif;
+  font-family: "HarmondItalic", sans-serif; 
 }
 .spotify-btn-2 {
   display: none;
@@ -519,8 +519,8 @@ margin-left: 20%;
 
   /* Add Your Songs button below the player, centered */
   #music .spotify-btn-1 {
-    display: none
-
+    display: none;
+    
   }
   #music .spotify-btn-2 {
   display: inline-block;
@@ -529,7 +529,7 @@ margin-left: 20%;
   background: var(--beige-color);
   color: var(--darker-color);
   text-decoration: none;
-  
+  font-family: "HarmondItalic", sans-serif; 
   font-weight: bold;
 
   }
@@ -561,7 +561,7 @@ margin-left: 20%;
 }
 
 .allergie-btn {
-  width: 60%;
+  width: 30%;
   text-align: center;
 }
 .allergie-text {
@@ -612,6 +612,7 @@ margin-right: 10%;
     font-size: 0.95rem;
     line-height: 1.5;
   }
+
   /*stay*/
 }
 /* Tablets */
