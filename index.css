@@ -3,6 +3,7 @@
   --beige-color: #f7f2ec;
   --pink-color: #f3e1e1;
 }
+
 @font-face {
   font-family: 'HarmondItalic';
   src: url('assets/fonts/Harmond-SemiBoldCondensed.otf') format('woff2');
