@@ -451,7 +451,8 @@ margin-left: 20%;
 /*music*/
 
   #music {
-    display: flex;
+    display: block;
+ 
     justify-content: center; /* horizontal center */
     align-items: center;     /* vertical center */
     height: 100vh;      
