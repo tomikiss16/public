@@ -135,7 +135,7 @@ font-family: 'HarmondItalic', sans-serif;
 }
 /*countdown*/
 
-/*music
+/*music*/
 #music {
   background: var(--darker-color);
   color: var(--beige-color);
@@ -444,7 +444,7 @@ margin-left: 20%;
   }
 /*main*/
 
-/*music
+/*music*/
 
   #music {
     display: block;
@@ -534,7 +534,7 @@ margin-left: 20%;
   text-decoration: none;
   font-family: "HarmondItalic", sans-serif; 
   }
-music*/
+/*music*/
 
 /*program*/
 #program{
