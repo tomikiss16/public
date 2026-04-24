@@ -260,13 +260,13 @@ display: none;
 }
 .spotify-btn-2 {
   display: none;
-font-family: "HarmondItalic", sans-serif;
+  font-family: "HarmondItalic", sans-serif;
 }
 /*music*/
 
 /*Program*/
 #program{
-    background-image: url("pics/back3mod.jpg");
+  background-image: url("pics/back3mod.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -427,8 +427,6 @@ margin-left: 20%;
 
     /* this "unwraps" it so children can be reordered */
   }
-    /* this "unwraps" it so children can be reordered */
-  }
 
   /* Order elements */
   .main-title {
@@ -452,7 +450,6 @@ margin-left: 20%;
 
   #music {
     display: block;
- 
     justify-content: center; /* horizontal center */
     align-items: center;     /* vertical center */
     height: 100vh;      
@@ -529,6 +526,7 @@ margin-left: 20%;
     font-family: "HarmondItalic", sans-serif; 
     
   }
+
   #music .spotify-btn-2 {
   display: inline-block;
   
@@ -605,17 +603,20 @@ margin-right: 10%;
 
   .stay-title {
     font-size: 1.8rem;
+    font-family: "HarmondItalic", sans-serif;
   }
 
   .stay-text-link {
     display: inline-block;
     margin: 10px 0;
     font-size: 1rem;
+    font-family: "Geist Mono", monospace;
   }
 
   .stay-text {
     font-size: 0.95rem;
     line-height: 1.5;
+    font-family: "Geist Mono", monospace;
   }
 
   /*stay*/
