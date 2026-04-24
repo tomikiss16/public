@@ -55,7 +55,7 @@ body {
 #hero { background: var(--beige-color); }
 #countdown-section { background: var(--darker-color); }
 #program { background: var(--pink-color); }
-#music { background: var(--darker-color); }
+/*#music { background: var(--darker-color); }*/
 #allergie { background: var(--beige-color); }
 #stay { background: var(--darker-color); }
 
@@ -135,7 +135,7 @@ font-family: 'HarmondItalic', sans-serif;
 }
 /*countdown*/
 
-/*music*/
+/*music
 #music {
   background: var(--darker-color);
   color: var(--beige-color);
@@ -151,7 +151,7 @@ font-family: 'HarmondItalic', sans-serif;
   margin: auto;
 }
 
-/* LEFT SIDE */
+
 .music-player {
   width: 300px;
   text-align: center;
@@ -160,47 +160,45 @@ font-family: 'HarmondItalic', sans-serif;
 
 .album-cover {
   width: 100%;
- /* aspect-ratio: 1 / 1;    makes it a square */
-  object-fit: cover;     /* crops nicely */
-  /*border-radius: 20px;*/
-  
-  
+
+  object-fit: cover;     
+
 }
 
 .player-ui {
 display: none;
 }
 
-/* Scrolling container */
+
 .scrolling-title {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
 
-  padding: 2px 0; /* very small vertical padding */
-  margin-bottom: 0px; /* small space before progress bar */
+  padding: 2px 0; 
+  margin-bottom: 0px; 
 }
 
-/* Playlist text */
+
 .playlist-title {
   display: inline-block;
-  font-size: 1rem;          /* smaller font */
-  line-height: 0.1;             /* tighter line height */
+  font-size: 1rem;          
+  line-height: 0.1;             
   animation: scroll-back-forth 8s linear infinite alternate; 
 }
 
-/* Keyframes for smooth left-right scroll */
+
 @keyframes scroll-back-forth {
   0% {
-    transform: translateX(20%);      /* start at normal position */
+    transform: translateX(20%);     
   }
   100% {
-    transform: translateX(-20%);   /* move slightly left, not fully off-screen */
-  }
+    transform: translateX(-20%);  
+}
 }
 
-/* Controls */
+
 .controls button {
   background: none;
   border: none;
@@ -214,7 +212,7 @@ display: none;
   justify-content: center;
   gap: 15px;
 }
-/* Progress bar */
+
 .progress-bar {
   height: 5px;
   background: #333;
@@ -225,13 +223,13 @@ display: none;
 }
 
 .progress {
-  width: 40%; /* fake progress */
+  width: 40%; 
   height: 100%;
   background: white;
 
 }
 
-/* RIGHT SIDE */
+
 .music-text {
   max-width: 400px;
   margin-bottom: 5%;
@@ -262,7 +260,7 @@ display: none;
   display: none;
   font-family: "HarmondItalic", sans-serif;
 }
-/*music*/
+music*/
 
 /*Program*/
 #program{
@@ -446,12 +444,12 @@ margin-left: 20%;
   }
 /*main*/
 
-/*music*/
+/*music
 
   #music {
     display: block;
-    justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center */
+    justify-content: center; 
+    align-items: center;     
     height: 100vh;      
     padding: 20px;
   }
@@ -459,10 +457,10 @@ margin-left: 20%;
   .music-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* spacing between album and button */
+    gap: 20px; 
   }
 
-  /* Hide the right text section */
+  
   .music-title {
     margin-top: -5%;
   }
@@ -471,7 +469,7 @@ margin-left: 20%;
     display: none;
   }
 
-  /* Make music-player fit mobile nicely */
+  
   .music-player {
     width: 80%;
     display: flex;
@@ -479,7 +477,7 @@ margin-left: 20%;
     align-items: center;
   }
 
-  /* Keep player UI aligned */
+  
   .player-ui {
     width: 80%;
     display: flex;
@@ -491,28 +489,28 @@ margin-left: 20%;
    -webkit-backdrop-filter: blur(10px);
 
   padding: 20px;
-  /*border-radius: 15px;*/
+ 
 
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 10px;
   }
 
-  /* Adjust album size */
+  
   .album-cover {
     width: 80%;
-    /*border-radius: 15px;*/
+    
     margin-bottom: 20px;
     margin-top: -10%;
   }
 
-  /* Center buttons inside player UI */
+  
   .buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
 
-  /* Center playlist title */
+  
   .playlist-title {
     text-align: center;
     width: 100%;
@@ -520,7 +518,7 @@ margin-left: 20%;
     font-size: 1rem;
   }
 
-  /* Add Your Songs button below the player, centered */
+ 
   #music .spotify-btn-1 {
     display: none;
     font-family: "HarmondItalic", sans-serif; 
@@ -536,7 +534,7 @@ margin-left: 20%;
   text-decoration: none;
   font-family: "HarmondItalic", sans-serif; 
   }
-/*music*/
+music*/
 
 /*program*/
 #program{
