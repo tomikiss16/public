@@ -403,15 +403,28 @@ margin-left: 20%;
 
 /*main*/
 #hero{
-  height: 100vh;
+  min-height: 70vh;
+  height: 70% ;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;       /* vertical centering */
+  justify-content: center;
 }
   .hero-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: 25px;                 
+  width: 100%;
+  max-width: 500px;
   }
   .hero-image img {
-    width: 60%;
+    width: 70%;
+  max-width: 280px;
+  height: auto;
   }
   /* Make elements full width */
   .hero-image,
@@ -429,17 +442,19 @@ margin-left: 20%;
   /* Order elements */
   .main-title {
     order: 1;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-top: -15%;
+    margin-bottom: -10%;
   }
 
   .hero-image {
     order: 2;
-    margin-top: -15%;
+    
   }
 
   .sub-text {
     order: 3;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     width: 80%;
   }
 /*main*/
@@ -450,7 +465,7 @@ margin-left: 20%;
     display: block;
     justify-content: center; 
     align-items: center;     
-    height: 105vh;      
+    height: 80%;      
     padding: 20px;
     
   }
@@ -532,7 +547,7 @@ margin-left: 20%;
   color: var(--darker-color);
   text-decoration: none;
   font-family: 'HarmondRegularS', sans-serif; 
-  margin-bottom: 15%;
+  
   }
 /*music*/
 
@@ -558,12 +573,13 @@ margin-left: 20%;
 
 /*allergie*/
 #allergie {
-  height: 70vh;
+  height: 60%;
 }
 
 .allergie-btn {
   width: 30%;
   text-align: center;
+  padding: 12px 20px;
 }
 .allergie-text {
 margin-left: 10%;
@@ -572,6 +588,7 @@ margin-right: 10%;
 .allergie-title {
   margin-left: 10%;
 margin-right: 10%;
+margin-top: -5%;
 }
 
 /*allergie*/
