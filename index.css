@@ -5,31 +5,31 @@
 }
 @font-face {
   font-family: 'HarmondItalic';
-  src: url('/public/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  src: url('assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: 'HarmondRegular';
-  src: url('/public/assets/fonts/Harmond-ExtBdItaExp.otf') format('opentype');
+  src: url('assets/fonts/Harmond-ExtBdItaExp.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'HarmondRegularS';
-  src: url('/public/assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
+  src: url('assets/fonts/Harmond-SemiBoldCondensed.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'HarmondRegularB';
-  src: url('/public/assets/fonts/Harmond-ExtraBoldExpanded.otf') format('opentype');
+  src: url('assets/fonts/Harmond-ExtraBoldExpanded.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'MontrealRegular';
-  src: url('/public/assets/fonts/NeueMontreal-Regular.otf') format('opentype');
+  src: url('assets/fonts/NeueMontreal-Regular.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
@@ -260,7 +260,7 @@ display: none;
   display: none;
   font-family: "HarmondItalic", sans-serif;
 }
-music*/
+/*music*/
 
 /*Program*/
 #program{
@@ -518,7 +518,6 @@ margin-left: 20%;
     font-size: 1rem;
   }
 
- 
   #music .spotify-btn-1 {
     display: none;
     font-family: "HarmondItalic", sans-serif; 
@@ -526,8 +525,7 @@ margin-left: 20%;
   }
 
   #music .spotify-btn-2 {
-  display: inline-block;
-  
+  display: inline-block; 
   padding: 12px 20px;
   background: var(--beige-color);
   color: var(--darker-color);
