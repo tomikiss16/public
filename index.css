@@ -322,7 +322,7 @@ display: none;
 }
 .allergie-title {
   color:var(--darker-color);  
-  font-family: "HarmondItalic", sans-serif;
+   font-family: 'HarmondRegularS', sans-serif;
  
 }
 .allergie-btn {
@@ -361,11 +361,11 @@ margin-left: 20%;
 }
 .stay-title {
   color:var(--beige-color);  
-  font-family: "HarmondItalic", sans-serif;
+  font-family: 'HarmondRegularS', sans-serif;
 }
 .stay-text {
   color:var(--beige-color);  
-  font-family: "Geist Mono", monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1rem;
   width: 70%;
   margin-left: 15%;
