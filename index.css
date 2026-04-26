@@ -599,20 +599,20 @@ margin-right: 10%;
 
   .stay-title {
     font-size: 1.8rem;
-    font-family: "HarmondItalic", sans-serif;
+    /*font-family: "HarmondItalic", sans-serif;*/
   }
 
   .stay-text-link {
     display: inline-block;
     margin: 10px 0;
     font-size: 1rem;
-    font-family: "Geist Mono", monospace;
+    /*font-family: "Geist Mono", monospace;*/
   }
 
   .stay-text {
     font-size: 0.95rem;
     line-height: 1.5;
-    font-family: "Geist Mono", monospace;
+    /*font-family: "Geist Mono", monospace;*/
   }
 
   /*stay*/
