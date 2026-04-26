@@ -241,7 +241,7 @@ display: none;
   font-family: 'HarmondRegularS', sans-serif;
 }
 .music-text p {
-  font-family: "Geist Mono", monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1.2rem;
 }
 
@@ -277,7 +277,7 @@ display: none;
   /*font-family: "MontrealRegular", monospace;*/
  font-size: 1.2rem;
  margin-left: 55%;
- font-family: "Geist Mono", monospace;
+ font-family: 'Geist Mono', monospace;
   
 }
 
@@ -317,7 +317,7 @@ display: none;
 }
 .allergie-text {
   color:black;  
-  font-family: "Geist Mono", monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1.2rem;
 }
 .allergie-title {
@@ -374,7 +374,7 @@ margin-left: 20%;
  color:var(--beige-color); 
   display: inline-block;             
   transition: transform 0.2s ease;   
-  font-family: "Geist Mono", monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -452,6 +452,7 @@ margin-left: 20%;
     align-items: center;     
     height: 100vh;      
     padding: 20px;
+    
   }
 
   .music-wrapper {
@@ -567,6 +568,10 @@ margin-left: 20%;
 margin-left: 10%;
 margin-right: 10%;
 }
+.allergie-title {
+  margin-left: 10%;
+margin-right: 10%;
+}
 
 /*allergie*/
 
@@ -598,7 +603,7 @@ margin-right: 10%;
   }
 
   .stay-title {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     /*font-family: "HarmondItalic", sans-serif;*/
   }
 
