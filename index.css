@@ -254,11 +254,11 @@ display: none;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
-  font-family: "HarmondItalic", sans-serif; 
+  font-family: 'HarmondRegularS', sans-serif;
 }
 .spotify-btn-2 {
   display: none;
-  font-family: "HarmondItalic", sans-serif;
+  font-family: 'HarmondRegularS', sans-serif;
 }
 /*music*/
 
@@ -332,7 +332,7 @@ display: none;
   background: var(--darker-color);
   color: var(--pink-color);
   text-decoration: none;
-  font-family: "HarmondItalic", sans-serif;
+  font-family: 'HarmondRegularS', sans-serif;
   font-weight: bold;
 }
 /*allergie*/
@@ -520,7 +520,7 @@ margin-left: 20%;
 
   #music .spotify-btn-1 {
     display: none;
-    font-family: "HarmondItalic", sans-serif; 
+    font-family: 'HarmondRegularS', sans-serif;
     
   }
 
@@ -530,7 +530,7 @@ margin-left: 20%;
   background: var(--beige-color);
   color: var(--darker-color);
   text-decoration: none;
-  font-family: "HarmondItalic", sans-serif; 
+  font-family: 'HarmondRegularS', sans-serif; 
   }
 /*music*/
 
